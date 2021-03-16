@@ -67,10 +67,11 @@ public class GameManager : MonoBehaviour
         if(!isGame) // if we are not in game, display scores
         {
             string finalScoreString = "Final Scores\n\n"; // Display the Final Score string
+            
 
             for (var i = 0; i < finalScore.Count; i++) // goes through our final score list
             {
-                finalScoreString = finalScore[i] + "\n"; // add a space between each score
+                finalScoreString += finalScore[i] + "\n"; // add a space between each score
             }
 
             timerText.text = finalScoreString; // fill in the text with the numbers in final score
